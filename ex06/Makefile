@@ -2,10 +2,10 @@ CC = c++
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = Test
+NAME = Harl_filter
 
 SRCS = main.cpp \
-		Read_Replace.cpp
+		Harl.cpp
 
 OBJECTS = $(SRCS:.cpp=.o)
 
@@ -13,7 +13,7 @@ RM = rm -f
 
 all: $(NAME)
 
-%.o: %.cpp Read_Replace.hpp
+%.o: %.cpp Harl.hpp
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 $(NAME): $(OBJECTS)

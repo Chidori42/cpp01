@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Read_Replace.hpp                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/15 23:56:25 by ael-fagr          #+#    #+#             */
+/*   Updated: 2025/01/15 23:56:25 by ael-fagr         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef READ_REPLACE_HPP
 #define READ_REPLACE_HPP
 
@@ -5,11 +17,11 @@
 #include <fstream>
 #include <string>
 
-void Openfile(std::string filename , std::ifstream &new_file);
-std::ofstream Create_newfile(std::string filename);
-std::string Replace_line(std::string Content, std::string s1, std::string s2);
-void Add_New_content(std::string filename, std::string New_content);
-std::string Read_And_Replace(std::ifstream &file, std::string s1, std::string s2);
+void Openfile(const std::string& filename, std::ifstream &new_file);
+void Create_newfile(const std::string& filename, std::ofstream &file);
+void Add_New_content(const std::string& filename, const std::string& New_content);
+std::string Read_And_Replace(std::ifstream &file, const std::string& s1, const std::string& s2);
+std::string Replace_line(const std::string& Content, const std::string& s1, const std::string& s2);
 
 #endif
 

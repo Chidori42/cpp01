@@ -5,32 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/15 23:56:18 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/01/15 23:56:18 by ael-fagr         ###   ########.fr       */
+/*   Created: 2025/01/15 23:56:14 by ael-fagr          #+#    #+#             */
+/*   Updated: 2025/01/15 23:56:14 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Read_Replace.hpp"
+#include "Harl.hpp"
 
-int main(int ac, char **av) {
-    if (ac != 4) {
-        std::cerr << "Invalid number of parameters." << std::endl;
-        return 1;
-    }
+int main() {
+    Harl harl;
 
-    std::string filename = av[1];
-    std::string s1 = av[2];
-    std::string s2 = av[3];
-
-    std::ifstream new_file;
-    Openfile(filename, new_file);
-
-    if (new_file.is_open()) {
-        std::string New_Content = Read_And_Replace(new_file, s1, s2);
-        Add_New_content(filename, New_Content);
-    } else {
-        std::cerr << "Failed to open the file." << std::endl;
-        return 1;
-    }
+    harl.complain("DEBUG");
+    harl.complain("INFO");
+    harl.complain("WARNING");
+    harl.complain("ERROR");
+    harl.complain("INVALID");
     return 0;
 }
