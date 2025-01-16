@@ -6,17 +6,16 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 01:49:14 by ael-fagr          #+#    #+#             */
-/*   Updated: 2024/10/08 02:04:35 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/01/16 21:57:01 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanA.hpp"
 
-HumanA::HumanA(std::string name, Weapon weapon)
+HumanA::HumanA(std::string name, Weapon &weapon) : name(name), weapon(weapon)
 {
     std::cout << "HumanA created" << std::endl;
-    this->name = name;
-    this->weapon = weapon;
+    
 }
 
 HumanA::~HumanA()

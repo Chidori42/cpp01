@@ -6,11 +6,13 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 01:35:07 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/01/15 23:57:04 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/01/16 15:18:26 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanA.hpp"
+#include "HumanB.hpp"
+#include <cstdlib>
 
 int main()
 {
