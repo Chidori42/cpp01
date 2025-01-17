@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 10:39:47 by ael-fagr          #+#    #+#             */
-/*   Updated: 2024/10/08 01:07:39 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/01/17 15:22:33 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int main() {
 
     Zombie* horde = zombieHorde(N, zombieName);
 
-    if (horde != nullptr) {
+    if (horde != NULL) {
         for (int i = 0; i < N; i++) {
             horde[i].announce();
         }

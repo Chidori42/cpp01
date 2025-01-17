@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 23:56:11 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/01/15 23:56:11 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/01/17 15:33:27 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ void Harl::complain( std::string level ){
             return ;
         }
     }
+    std::cout << "Input are not match for eny level" << std::endl;
 }
 
 void Harl::debug( void ){
